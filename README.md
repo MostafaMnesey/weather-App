@@ -27,20 +27,6 @@ This application is a dynamic weather forecasting tool that uses the Weather API
 - **Weather API**: Fetches weather data.
 - **Browser Geolocation API**: Retrieves the user's current location.
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/weather-app.git
-   ```
-
-2. Open the project folder:
-   ```bash
-   cd weather-app
-   ```
-
-3. Open the `index.html` file in your browser to run the application.
-
 ## Usage
 
 1. Open the application in your web browser.
@@ -82,11 +68,5 @@ The API key is hardcoded in the script for testing purposes. In production, it i
 4. **Secure API Key:**
    - Move the API key to a backend service or secure environment.
 
-## Contributing
 
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
