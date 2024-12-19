@@ -44,7 +44,7 @@ async function getWeather(location = getloc()) {
   try {
     mHttp = new XMLHttpRequest();
     response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=6a317ab58d8d4b0aa54143535240912&q=${loc.latitude},${loc.longitude}&days=7`
+      `https://api.weatherapi.com/v1/forecast.json?key=6a317ab58d8d4b0aa54143535240912&q=${loc.latitude},${loc.longitude}&days=7`
     );
     data = await response.json();
     day = await data.forecast.forecastday[0].day;
@@ -124,7 +124,7 @@ async function display(arr) {
   search.addEventListener("input", async function (e) {
     mHttp = new XMLHttpRequest();
     var response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=6a317ab58d8d4b0aa54143535240912&q=${e.target.value}&days=7`
+      `https://api.weatherapi.com/v1/forecast.json?key=6a317ab58d8d4b0aa54143535240912&q=${e.target.value}&days=7`
     );
   /*   var data = await response.json();
      var lat = await data[0].lat;
