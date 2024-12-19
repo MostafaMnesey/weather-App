@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <!-- main Style -->
+    <link rel="stylesheet" href="Css/Style2.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- !======================================nav==============================! -->
+    <div class="nav">
+      <div class="container px-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="#"
+              >
+              <div class="logo pt-3 px-3">
+                <span class="text-white px-2 text-center fs-16 fw-bolder"
+                  >Weather app</span
+                ><br />
+                <span class="text-white-50 px-2 fs-10">tagline goes here</span>
+              </div>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item p-2">
+                  <a class="nav-link active px-3" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link px-3" href="#">News</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link px-3" href="#">live Cameras</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link px-3" href="#">Photos</a>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="nav-link px-3" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- !======================================nav==============================! -->
+
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="content pt-4">
+              <div class="icons pt-4 d-flex flex-column align-items-center">
+                <div
+                  class="icon my-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-cloud-showers-water fs-5"></i>
+                </div>
+                <div
+                  class="icon my-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-regular fa-map fs-5"></i>
+                </div>
+                <div
+                  class="icon my-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-bars fs-5"></i>
+                </div>
+                <div
+                  class="icon my-3 d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid fa-sliders fs-5"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="content">
+              <div class="py-5 px-3">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Default input"
+                  aria-label="default input example"
+                  id="search"
+                />
+              </div>
+
+              <div class="weather">
+                <div class="container">
+                  <div class="row d-flex">
+                    <div class="col-5 mx-3">
+                      <p>
+                        <span
+                          class="fs-40 text-white fw-bolder"
+                          id="city"
+                        ></span>
+                      </p>
+                      <p class="text-white fs-5">
+                        Chance of rain
+                        <span class="fw-bolder fs-2 chance-rain px-1">
+                          
+                        </span>
+                        %
+                      </p>
+                      <p class="fs-64 text-white">
+                        <span class="temp">  </span>
+                        <sup>o</sup>
+                      </p>
+                    </div>
+                    <div class="col-6">
+                      <img src="imgs/logo.png" class="w-75 icon-img" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="forecast my-3">
+                <p class="text-white py-4 px-3">Today Forecasts</p>
+                <div class="forecasts py-4">
+                  <ul class="d-flex justify-content-center pb-2 today">
+                  
+                  </ul>
+                </div>
+              </div>
+              <div class="air">
+                <div class="container-fluid">
+                  <p class="text-white fs-16 py-4 px-3">Air Conditions</p>
+                  <div class="row">
+                    <div class="col-6 py-1">
+                      <div class="air-Conditions">
+                        <div class="feel">
+                          <div
+                            class="feel feel-el d-flex flex-column justify-content-center"
+                          >
+                            <div class="text d-flex">
+                              <i
+                                class="fa-solid fa-temperature-quarter py-1 px-3"
+                              ></i>
+                              <p class="text-white-50 fs-20">Real Feel</p>
+                            </div>
+                            <span class="text-white ps-5 fs-40"
+                              ><span class="feel-temp">20</span><sup>o</sup></span
+                            >
+                          </div>
+                          <div
+                            class="feel d-flex flex-column justify-content-center"
+                          >
+                            <div class="text d-flex">
+                              <i class="fa-solid fa-droplet py-1 px-3"></i>
+
+                              <p class="text-white-50 fs-20">Chance of rain</p>
+                            </div>
+                            <span class="text-white ps-5 fs-40"
+                              ><span class="chance-rain2"></span><sup>o</sup></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 py-1">
+                      <div class="feel">
+                        <div
+                          class="feel d-flex flex-column justify-content-center"
+                        >
+                          <div class="text d-flex">
+                            <i class="fa-solid fa-wind py-1 px-3"></i>
+                            <i class=""></i>
+                            <p class="text-white-50 fs-20">Wind</p>
+                          </div>
+                          <span class="text-white ps-5 fs-40"
+                            ><span class="wind"></span> km/h</span
+                          >
+                        </div>
+                        <div
+                          class="feel d-flex flex-column justify-content-center"
+                        >
+                          <div class="text d-flex">
+                            <i class="fa-solid fa-sun py-1 px-3"></i>
+
+                            <p class="text-white-50 fs-20">UV Index</p>
+                          </div>
+                          <span class="text-white ps-5 fs-40"
+                            ><span class="uv"></span></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="content forecast vh-80 my-5">
+              <div class="days-forecast">
+                <p class="text-white fs-16 py-4 my-5 px-3">7 Days Forecast</p>
+                <ul class="forecast-list">
+             
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="JS/index.js"></script>
+    <script src="JS/bootstrap.bundle.js"></script>
+  </body>
+</html>

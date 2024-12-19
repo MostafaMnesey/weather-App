@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding-left: 0px !important;
+}
+
+body {
+  font-family: "Titillium Web", serif;
+}
+.navbar-nav .nav-link.active {
+  border: 2px solid #009ad8;
+  border-radius: 30px;
+}
+.navbar-nav .nav-link {
+  border: 2px solid transparent;
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  border: 2px solid #009ad8;
+  border-radius: 30px;
+  padding: 5px;
+  color: #009ad8;
+}
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+}
+.nav {
+  background-color: #1e202b;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.color-b {
+  color: #009ad8;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+/*? header */
+
+.header {
+  background-color: #0b131e;
+  min-height: 80vh;
+}
+.icons {
+  background-color: rgba(32, 43, 59, 0.7);
+  border-radius: 20px;
+  min-height: 80vh;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.icon:hover {
+  background-color: rgba(12, 174, 220, 1);
+  color: black;
+}
+.form-control {
+  background-color: rgba(32, 43, 59, 0.7);
+  outline: none;
+  border: none;
+  color: white;
+}
+.form-control:focus {
+  background-color: rgba(32, 43, 59, 0.7);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+.forecast {
+  background-color: rgba(32, 43, 59, 0.7);
+  border-radius: 20px;
+}
+.forecasts ul li {
+  border-right: 1px solid rgba(255, 255, 255, 0.433);
+}
+.forecasts ul {
+  list-style: none;
+}
+.forecasts ul li:last-child {
+  border-right: none;
+}
+sub {
+  bottom: 0.75em;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.text i {
+  font-size: 30px;
+  color: rgba(225, 225, 225, 0.5);
+}
+.air {
+  background-color: rgba(32, 43, 59, 0.7);
+  border-radius: 20px;
+}
+.content .forecast {
+  border-radius: 20px;
+  background-color: rgba(32, 43, 59, 0.7);
+}
+
+.vh-80 {
+  min-height: 80vh;
+}
+
+
+.hours {
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.hours:hover {
+  background-color: rgba(12, 174, 220, 1);
+  color: black;
+  transform: scale(1.1);
+}
+
+.day {
+  padding: 10px 0px 10px 0px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.day:hover {
+  background-color: rgba(12, 174, 220, 1);
+  color: black;
+  transform: scale(1.1);
+  transform: skewx(-5deg);
+}
+
+@media screen and (min-width: 200px) {
+  .header .content .icons {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .header .content .icons {
+    display: flex !important;
+  }
+}
